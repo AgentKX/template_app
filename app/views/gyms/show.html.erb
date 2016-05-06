@@ -1,8 +1,9 @@
-<h2>All equipment</h2>
+<h2>This equipment</h2>
 <h3><%= @gym.equipment_type %></h3>
 <h4><%= @gym.description %></h4>
 <h5><%= @gym.good_for %></h5>
 <a href="/gyms">Back to all Equipment</a>
 <%= link_to "Edit this Equipment", "/gyms/#{@gym.id}/edit" %>
 <%= link_to "Delete this Equipment", "/gyms/#{@gym.id}", method: :delete %>
+<h6><img src="<%= @gym.image %>"></h6>
 

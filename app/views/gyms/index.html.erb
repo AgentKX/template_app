@@ -1,9 +1,9 @@
 <h1>Gym Equipment</h1>
-<% @gyms.each do |gym| %>
-  <h2>Equipment: <%= link_to gym.equipment_type, "/gyms/#{gym.id}" %></h2>
-  <h3>Description: <%= gym.description %></h3>
-  <h4>Good For: <%= gym.good_for %></h4>
-  <img src="<%= gym.image %>" alt="">
-<% end %>
- <h3><%= link_to "Add a piece of Equipment", "/gyms/new" %></h3>
+  <% @gyms.each do |gym| %> 
+    <h2>Equipment: <%= link_to gym.equipment_type, "/gyms/#{gym.id}" %></h2>
+    <h3>Description: <%= gym.description %></h3>
+    <h4>Good For: <%= gym.good_for %></h4>
+    <img src="<%= gym.image %>" alt="">
+    <% end %>
+    <h3><%= link_to "Add a piece of Equipment", "/gyms/new" %></h3>
 
